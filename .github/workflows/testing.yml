@@ -2,10 +2,10 @@ name: Testing
 
 on:
   pull_request:
-    branches: [main]
+    branches: ["main"]
 
 jobs:
-  tests:
+  unit_tests:
     name: Unit Tests
     runs-on: ubuntu-latest
 
@@ -15,6 +15,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+
       - name: Jest Scan using Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
@@ -22,18 +23,6 @@ jobs:
       - run: npm install -g yarn
       - run: yarn
       - run: yarn test
+
       - name: Jest Coverage Report
         uses: ArtiomTr/jest-coverage-report-action@v2.1.2
-
-  sonarcloud:
-    name: SonarCloud
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0 # Shallow clones should be disabled for a better relevancy of analysis
-      - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Needed to get PR information, if any
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}

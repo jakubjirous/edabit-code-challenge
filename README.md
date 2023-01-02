@@ -6,6 +6,18 @@ Plus it has a gamified environment where you can gain XP, level up and unlock ac
 
 ---
 
+<p align="center">
+    <img src="https://sonarcloud.io/images/project_badges/sonarcloud-white.svg" alt="Sonar Cloud">
+</p>
+
+<p align="center">
+    <img src="https://sonarcloud.io/api/project_badges/measure?project=jakubjirous_edabit-code-challenge&metric=coverage" alt="Coverage">
+    <img src="https://sonarcloud.io/api/project_badges/measure?project=jakubjirous_edabit-code-challenge&metric=code_smells" alt="Code Smells">
+    <img src="https://sonarcloud.io/api/project_badges/measure?project=jakubjirous_edabit-code-challenge&metric=ncloc" alt="Lines of Code">
+</p>
+
+---
+
 ## Challenges in TypeScript
 
 1. [Return the Sum of Two Numbers](/src/challenges/01-addition/)
