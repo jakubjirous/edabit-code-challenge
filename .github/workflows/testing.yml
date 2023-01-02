@@ -2,11 +2,10 @@ name: Testing
 
 on:
   pull_request:
-    branches: [main]
+    branches: ["main"]
 
 jobs:
-  tests:
-    name: Unit Tests
+  Unit Tests:
     runs-on: ubuntu-latest
 
     strategy:
@@ -15,6 +14,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+
       - name: Jest Scan using Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
@@ -22,5 +22,6 @@ jobs:
       - run: npm install -g yarn
       - run: yarn
       - run: yarn test
+
       - name: Jest Coverage Report
         uses: ArtiomTr/jest-coverage-report-action@v2.1.2
