@@ -5,5 +5,3 @@
 Plus it has a gamified environment where you can gain XP, level up and unlock achievements.
 
 ---
-
-Test
