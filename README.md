@@ -17,3 +17,8 @@ Plus it has a gamified environment where you can gain XP, level up and unlock ac
 </p>
 
 ---
+
+## Challenges in TypeScript
+
+1. [Return the Sum of Two Numbers](/src/challenges/01-addition/)
+2. [Convert Minutes into Seconds](/src/challenges/02-convert/)
