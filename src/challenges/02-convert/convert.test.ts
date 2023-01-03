@@ -1,7 +1,6 @@
 import { convert } from "./convert";
 
 type FirstArg = number;
-
 type ExpectedResult = number;
 type Cases = [FirstArg, ExpectedResult][];
 
