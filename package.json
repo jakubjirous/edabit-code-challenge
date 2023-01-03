@@ -20,7 +20,9 @@
   "scripts": {
     "build": "tsc",
     "test": "jest",
-    "test-coverage": "jest --coverage"
+    "test:w": "jest --watch",
+    "test:wa": "jest --watchAll",
+    "test:cov": "jest --coverage"
   },
   "dependencies": {
     "babel-jest": "^29.3.1",
@@ -56,7 +58,8 @@
     "jest-worker": "^29.3.1",
     "load-tsconfig": "^0.2.3",
     "source-map": "^0.6.1",
-    "source-map-support": "^0.5.13"
+    "source-map-support": "^0.5.13",
+    "ts-node": "^10.9.1"
   },
   "devDependencies": {
     "@types/jest": "^29.2.4",

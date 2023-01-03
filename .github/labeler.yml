@@ -1,2 +1,2 @@
 code-challenge:
-  - any: ["src/challenges/**/*.ts"]
+  - any: ["src/**/*.ts"]
