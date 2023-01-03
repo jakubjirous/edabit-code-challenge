@@ -1,4 +1,4 @@
-import { nextNumber } from "./next-number";
+import { nextNumber } from "../next-number";
 
 type FirstArg = number;
 type ExpectedResult = number;

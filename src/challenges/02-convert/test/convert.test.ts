@@ -1,4 +1,4 @@
-import { convert } from "./convert";
+import { convert } from "../convert";
 
 type FirstArg = number;
 type ExpectedResult = number;

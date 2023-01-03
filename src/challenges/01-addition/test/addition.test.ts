@@ -1,4 +1,4 @@
-import { addition } from "./addition";
+import { addition } from "../addition";
 
 type FirstArg = number;
 type SecondArg = number;
