@@ -2,9 +2,6 @@ import { Input, nextNumber, Output } from "../next-number";
 
 type Cases = [Input, Output][];
 
-/**
- * Tests a function that takes a number as an argument, increments the number by +1 and returns the result.
- */
 describe("Next Number", () => {
   const cases: Cases = [
     [2, 3],

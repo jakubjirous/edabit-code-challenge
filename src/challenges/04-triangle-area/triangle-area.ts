@@ -3,14 +3,10 @@ export type Height = number;
 export type Output = number;
 
 /**
- * Area of a Triangle
+ * A function that takes the base and height of a triangle and `return` its area.
  *
- * Write a function that takes the base and height of a triangle and return its area.
- *
- * Example:
- * - triangleArea(3, 2) ➞ 3
- * - triangleArea(7, 4) ➞ 14
- * - triangleArea(10, 10) ➞ 50
+ * @param base
+ * @param height
  */
 export const triangleArea = (base: Base, height: Height): Output => {
   return (base * height) / 2;
