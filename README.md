@@ -25,3 +25,4 @@ Plus it has a gamified environment where you can gain XP, level up and unlock ac
 3. [Next Number from the Integer Passed](/src/challenges/03-next-number/INDEX.md)
 4. [Area of a Triangle](/src/challenges/04-triangle-area/INDEX.md)
 5. [Convert Age to Days](/src/challenges/05-age-to-days/INDEX.md)
+6. [Bitwise Operations](/src/challenges/06-bitwise-operations/INDEX.md)
