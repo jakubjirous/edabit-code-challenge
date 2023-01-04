@@ -1,3 +1,7 @@
+export type Param1 = number;
+export type Param2 = number;
+export type Output = number;
+
 /**
  * Return the Sum of Two Numbers
  *
@@ -8,6 +12,6 @@
  * - addition(-3, -6) ➞ -9
  * - addition(7, 3) ➞ 10
  */
-export const addition = (param1: number, param2: number): number => {
+export const addition = (param1: Param1, param2: Param2): Output => {
   return param1 + param2;
 };

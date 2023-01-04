@@ -1,9 +1,6 @@
-import { addition } from "../addition";
+import { addition, Output, Param1, Param2 } from "../addition";
 
-type FirstArg = number;
-type SecondArg = number;
-type ExpectedResult = number;
-type Cases = [FirstArg, SecondArg, ExpectedResult][];
+type Cases = [Param1, Param2, Output][];
 
 /**
  * Tests a function that takes two numbers as arguments and returns their sum.
