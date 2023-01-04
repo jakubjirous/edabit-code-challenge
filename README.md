@@ -20,7 +20,7 @@ Plus it has a gamified environment where you can gain XP, level up and unlock ac
 
 ## Challenges in TypeScript
 
-1. [Return the Sum of Two Numbers](/src/challenges/01-addition/)
-2. [Convert Minutes into Seconds](/src/challenges/02-convert/)
-3. [Next Number from the Integer Passed](/src/challenges/03-next-number/)
-4. [Area of a Triangle](/src/challenges/04-triangle-area/)
+1. [Return the Sum of Two Numbers](/src/challenges/01-addition/INDEX.md)
+2. [Convert Minutes into Seconds](/src/challenges/02-convert/INDEX.md)
+3. [Next Number from the Integer Passed](/src/challenges/03-next-number/INDEX.md)
+4. [Area of a Triangle](/src/challenges/04-triangle-area/INDEX.md)
