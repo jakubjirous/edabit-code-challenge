@@ -1,3 +1,6 @@
+export type Input = number;
+export type Output = number;
+
 /**
  * Return the Next Number from the Integer Passed
  *
@@ -8,6 +11,6 @@
  * - nextNumber(9) ➞ 10
  * - nextNumber(-3) ➞ -2
  */
-export const nextNumber = (input: number): number => {
+export const nextNumber = (input: Input): Output => {
   return input + 1;
 };

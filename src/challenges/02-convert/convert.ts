@@ -1,3 +1,6 @@
+export type Input = number;
+export type Output = number;
+
 /**
  * Convert Minutes into Seconds
  *
@@ -8,6 +11,6 @@
  * - convert(3) ➞ 180
  * - convert(2) ➞ 120
  */
-export const convert = (minutes: number): number => {
+export const convert = (minutes: Input): Output => {
   return minutes * 60;
 };

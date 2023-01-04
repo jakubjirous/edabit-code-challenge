@@ -1,9 +1,6 @@
-import { triangleArea } from "../triangle-area";
+import { Base, Height, Output, triangleArea } from "../triangle-area";
 
-type FirstArg = number;
-type SecondArg = number;
-type ExpectedResult = number;
-type Cases = [FirstArg, SecondArg, ExpectedResult][];
+type Cases = [Base, Height, Output][];
 
 /**
  * Tests a function that takes the base and height of a triangle and return its area.
