@@ -1,6 +1,6 @@
-## [CODE CHALLENGE NAME]
+## NAME
 
-- [Instructions @ Edabit](https://edabit.com/challenge/HASH_OF_THE_CODE_CHALLENGE)
+- [Instructions @ Edabit](URL)
 
 ---
 

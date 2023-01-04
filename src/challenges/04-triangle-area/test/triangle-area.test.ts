@@ -2,9 +2,6 @@ import { Base, Height, Output, triangleArea } from "../triangle-area";
 
 type Cases = [Base, Height, Output][];
 
-/**
- * Tests a function that takes the base and height of a triangle and return its area.
- */
 describe("Triangle Area", () => {
   const cases: Cases = [
     [3, 2, 3],

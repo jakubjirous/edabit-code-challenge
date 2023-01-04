@@ -2,9 +2,6 @@ import { convert, Input, Output } from "../convert";
 
 type Cases = [Input, Output][];
 
-/**
- * Tests a function that takes an integer minutes and converts it to seconds.
- */
 describe("Convert", () => {
   const cases: Cases = [
     [6, 360],

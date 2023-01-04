@@ -2,14 +2,9 @@ export type Input = number;
 export type Output = number;
 
 /**
- * Convert Minutes into Seconds
+ * A function that takes an integer minutes and converts it to seconds.
  *
- * Write a function that takes an integer minutes and converts it to seconds.
- *
- * Example:
- * - convert(5) ➞ 300
- * - convert(3) ➞ 180
- * - convert(2) ➞ 120
+ * @param minutes
  */
 export const convert = (minutes: Input): Output => {
   return minutes * 60;
