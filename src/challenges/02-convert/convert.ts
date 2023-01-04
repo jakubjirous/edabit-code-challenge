@@ -8,6 +8,9 @@
  * - convert(3) ➞ 180
  * - convert(2) ➞ 120
  */
-export const convert = (minutes: number): number => {
+export type Minutes = number;
+export type Output = number;
+
+export const convert = (minutes: Minutes): Output => {
   return minutes * 60;
 };

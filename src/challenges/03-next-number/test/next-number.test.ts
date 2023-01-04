@@ -1,8 +1,6 @@
-import { nextNumber } from "../next-number";
+import { Input, nextNumber, Output } from "../next-number";
 
-type FirstArg = number;
-type ExpectedResult = number;
-type Cases = [FirstArg, ExpectedResult][];
+type Cases = [Input, Output][];
 
 /**
  * Tests a function that takes a number as an argument, increments the number by +1 and returns the result.

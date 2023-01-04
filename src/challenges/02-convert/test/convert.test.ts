@@ -1,8 +1,6 @@
-import { convert } from "../convert";
+import { convert, Minutes, Output } from "../convert";
 
-type FirstArg = number;
-type ExpectedResult = number;
-type Cases = [FirstArg, ExpectedResult][];
+type Cases = [Minutes, Output][];
 
 /**
  * Tests a function that takes an integer minutes and converts it to seconds.
