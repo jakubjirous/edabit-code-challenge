@@ -32,3 +32,4 @@ Plus it has a gamified environment where you can gain XP, level up and unlock ac
 ### Medium:
 
 1. [Return the Sum of Two Numbers](/src/challenges/medium/01-how-much-is-true/INDEX.md)
+2. [Redundant Function](/src/challenges/medium/02-redundant-function/INDEX.md)
