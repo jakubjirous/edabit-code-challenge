@@ -16,5 +16,5 @@ triangleArea(10, 10) ➞ 50
 
 ### Solution:
 
-- [Code](/src/challenges/04-triangle-area/triangle-area.ts)
-- [Tests](/src/challenges/04-triangle-area/test/triangle-area.test.ts)
+- [Code](/src/challenges/very-easy/04-triangle-area/triangle-area.ts)
+- [Tests](/src/challenges/very-easy/04-triangle-area/test/triangle-area.test.ts)

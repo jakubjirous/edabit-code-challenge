@@ -16,5 +16,5 @@ nextNumber(-3) ➞ -2
 
 ### Solution:
 
-- [Code](/src/challenges/03-next-number/next-number.ts)
-- [Tests](/src/challenges/03-next-number/test/next-number.test.ts)
+- [Code](/src/challenges/very-easy/03-next-number/next-number.ts)
+- [Tests](/src/challenges/very-easy/03-next-number/test/next-number.test.ts)

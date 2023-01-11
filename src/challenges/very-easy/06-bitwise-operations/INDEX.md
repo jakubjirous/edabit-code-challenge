@@ -39,5 +39,5 @@ JavaScript has a useful function: `toString(2)`, where you can see the binary re
 
 ### Solution:
 
-- [Code](/src/challenges/06-bitwise-operations/bitwise-operations.ts)
-- [Tests](/src/challenges/06-bitwise-operations/test/bitwise-operations.test.ts)
+- [Code](/src/challenges/very-easy/06-bitwise-operations/bitwise-operations.ts)
+- [Tests](/src/challenges/very-easy/06-bitwise-operations/test/bitwise-operations.test.ts)

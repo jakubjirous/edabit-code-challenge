@@ -16,5 +16,5 @@ addition(7, 3) ➞ 10
 
 ### Solution:
 
-- [Code](/src/challenges/01-addition/addition.ts)
-- [Tests](/src/challenges/01-addition/test/addition.test.ts)
+- [Code](/src/challenges/very-easy/01-addition/addition.ts)
+- [Tests](/src/challenges/very-easy/01-addition/test/addition.test.ts)
