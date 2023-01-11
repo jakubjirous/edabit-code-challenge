@@ -16,5 +16,5 @@ ageToDays(20) ➞ 7300
 
 ### Solution:
 
-- [Code](/src/challenges/05-age-to-days/age-to-days.ts)
-- [Tests](/src/challenges/05-age-to-days/test/age-to-days.test.ts)
+- [Code](/src/challenges/very-easy/05-age-to-days/age-to-days.ts)
+- [Tests](/src/challenges/very-easy/05-age-to-days/test/age-to-days.test.ts)

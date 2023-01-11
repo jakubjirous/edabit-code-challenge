@@ -16,5 +16,5 @@ convert(2) ➞ 120
 
 ### Solution:
 
-- [Code](/src/challenges/02-convert/convert.ts)
-- [Tests](/src/challenges/02-convert/test/convert.test.ts)
+- [Code](/src/challenges/very-easy/02-convert/convert.ts)
+- [Tests](/src/challenges/very-easy/02-convert/test/convert.test.ts)

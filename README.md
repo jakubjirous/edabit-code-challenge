@@ -20,9 +20,15 @@ Plus it has a gamified environment where you can gain XP, level up and unlock ac
 
 ## Challenges in TypeScript
 
-1. [Return the Sum of Two Numbers](/src/challenges/01-addition/INDEX.md)
-2. [Convert Minutes into Seconds](/src/challenges/02-convert/INDEX.md)
-3. [Next Number from the Integer Passed](/src/challenges/03-next-number/INDEX.md)
-4. [Area of a Triangle](/src/challenges/04-triangle-area/INDEX.md)
-5. [Convert Age to Days](/src/challenges/05-age-to-days/INDEX.md)
-6. [Bitwise Operations](/src/challenges/06-bitwise-operations/INDEX.md)
+### Very Easy:
+
+1. [Return the Sum of Two Numbers](/src/challenges/very-easy/01-addition/INDEX.md)
+2. [Convert Minutes into Seconds](/src/challenges/very-easy/02-convert/INDEX.md)
+3. [Next Number from the Integer Passed](/src/challenges/very-easy/03-next-number/INDEX.md)
+4. [Area of a Triangle](/src/challenges/very-easy/04-triangle-area/INDEX.md)
+5. [Convert Age to Days](/src/challenges/very-easy/05-age-to-days/INDEX.md)
+6. [Bitwise Operations](/src/challenges/very-easy/06-bitwise-operations/INDEX.md)
+
+### Medium:
+
+1. [Return the Sum of Two Numbers](/src/challenges/medium/01-how-much-is-true/INDEX.md)
