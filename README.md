@@ -37,3 +37,7 @@ Plus it has a gamified environment where you can gain XP, level up and unlock ac
 4. [Perimeters With A Catch](/src/challenges/medium/04-perimeters-with-a-catch/INDEX.md)
 5. [Number Of Digits In Number](/src/challenges/medium/05-number-of-digits-in-number/INDEX.md)
 6. [Derivative](/src/challenges/medium/06-derivative/INDEX.md)
+
+### Hard:
+
+1. [Seven Boom](/src/challenges/hard/01-seven-boom/INDEX.md)
