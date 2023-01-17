@@ -34,3 +34,4 @@ Plus it has a gamified environment where you can gain XP, level up and unlock ac
 1. [Return the Sum of Two Numbers](/src/challenges/medium/01-how-much-is-true/INDEX.md)
 2. [Redundant Function](/src/challenges/medium/02-redundant-function/INDEX.md)
 3. [Shift Right By Division](/src/challenges/medium/03-right-shift-by-division/INDEX.md)
+4. [Perimeters With A Catch](/src/challenges/medium/04-perimeters-with-a-catch/INDEX.md)

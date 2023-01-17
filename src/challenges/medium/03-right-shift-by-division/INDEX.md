@@ -12,7 +12,6 @@ Sample calculation using the right shift operator (`>>`):
 
 Write a function that mimics (without the use of `>>`) the right shift operator and returns the result from the two given integers.
 
-
 ---
 
 ### Examples:
