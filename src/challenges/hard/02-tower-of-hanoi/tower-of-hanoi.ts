@@ -2,7 +2,7 @@ export type Input = number;
 export type Output = number;
 
 /**
- *A function that takes a number of discs as an argument and returns the minimum amount of steps needed to complete the game.
+ * A function that takes a number of discs as an argument and returns the minimum amount of steps needed to complete the game.
  *
  * @param discs
  */
