@@ -41,3 +41,4 @@ Plus it has a gamified environment where you can gain XP, level up and unlock ac
 ### Hard:
 
 1. [Seven Boom](/src/challenges/hard/01-seven-boom/INDEX.md)
+2. [Tower of Hanoi](/src/challenges/hard/02-tower-of-hanoi/INDEX.md)
