@@ -1,0 +1,39 @@
+name: "Code Review with OpenAI"
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+env:
+  OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
+jobs:
+  code-review:
+    name: "Code Review"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Checkout code"
+        uses: actions/checkout@v3
+
+      - name: "Run Node.js script"
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: "Install dependencies"
+        run: npm i -g yarn
+
+      - name: "Install OpenAI package"
+        run: yarn add openai
+
+      - name: "Use OpenAI package"
+        run: |
+          echo "Running OpenAI code...";
+          const openai = require("openai");
+          console.log(`OpenAI version: ${openai.version}`);
