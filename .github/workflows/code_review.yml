@@ -1,0 +1,28 @@
+name: "Code Review Workflow"
+
+on:
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  code-review:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Fetch pull request information"
+        id: pr-info
+        uses: actions/github-script@v3
+        with:
+          github-token: ${{ secrets.GH_TOKEN }}
+          script: |
+            const pr = context.payload.pull_request;
+            console.log(` Pull request information: ${JSON.stringify(pr)}`);
+
+      - name: "Run OpenAI code review"
+        id: code-review
+        uses: openai/action-chat-gpt@v1
+        with:
+          prompt: "Please provide a code review of the following Pull Request: ${{ steps.pr-info.outputs.pull_request }}"
+          model: text-davinci-002
+          api_key: ${{ secrets.OPENAI_API_KEY }}
