@@ -1,13 +1,45 @@
-name: "Code Review Workflow"
+name: "Code Review with OpenAI"
 
 on:
-  pull_request:
-    types: [opened, synchronize, reopened]
+  push:
     branches:
-      - develop
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+env:
+  OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
 jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set up Node.js environment
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+          registry-url: https://npm.pkg.github.com
+
+      - name: Install dependencies
+        run: |
+          npm install openai
+
+      - name: Code review using ChatGPT
+        uses: actions/github-script@v3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          script: |
+            const openai = require("openai");
+            openai.prompt(`What is the capital of France?`).then((answer) => {
+              console.log(answer);
+            });
+
   code-review:
+    name: "Code Review"
     runs-on: ubuntu-latest
 
     steps:
@@ -19,11 +51,42 @@ jobs:
         with:
           node-version: 16
 
-      - name: "Fetch pull request information"
-        id: pr-info
+      - name: "Install dependencies"
+        run: npm install openai
+
+      - name: "Send code to OpenAI for review"
+        id: code-review
         uses: actions/github-script@v3
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         with:
-          github-token: ${{ secrets.GH_TOKEN }}
           script: |
-            const pr = context.payload.pull_request;
-            console.log(` Pull request information: ${JSON.stringify(pr)}`);
+            const openai = require("openai");
+            openai.prompt( 
+              {
+                model: "text-davinci-002",
+                prompt: "Please review the code in this pull request and provide feedback",
+                maxTokens: 100,
+                temperature: 0.5,
+                topP: 1
+              },
+              function(error, response) {
+                if (error) {
+                  throw new Error(error);
+                }
+                const review = response.choices[0].text;
+                const pull_request_number = context.payload.pull_request.number;
+                const pull_request_body = context.payload.pull_request.body;
+                const new_body = pull_request_body + "\n\n" + "Code Review: " + review;
+                octokit.pulls.update({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  pull_number: pull_request_number,
+                  body: new_body
+                }).then(() => {
+                  console.log("Code review successfully added to the pull request!");
+                }).catch((error) => {
+                  throw new Error(error);
+                });
+              }
+            );
