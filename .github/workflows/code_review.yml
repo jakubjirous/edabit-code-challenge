@@ -24,8 +24,8 @@ jobs:
           registry-url: https://npm.pkg.github.com
 
       - name: Install dependencies
-        run: |
-          npm install openai
+        run: npm install -g yarn
+      - run: yarn add openai
 
       - name: Code review using ChatGPT
         uses: actions/github-script@v3
