@@ -34,4 +34,6 @@ jobs:
 
       - name: "Use OpenAI package"
         run: |
-          echo "Running OpenAI code..."
+          echo "Running OpenAI code...";
+          const openai = require("openai");
+          console.log(`OpenAI version: ${openai.version}`);
