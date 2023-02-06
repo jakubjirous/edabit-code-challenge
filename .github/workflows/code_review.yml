@@ -32,6 +32,12 @@ jobs:
       - name: "Install OpenAI package"
         run: yarn add openai
 
+      - name: "Use OpenAI package"
+        run: |
+          echo "Running OpenAI code..."
+          const openai = require("openai");
+          console.log(openai);
+
       - name: "Send code to OpenAI for review"
         id: code-review
         uses: actions/github-script@v3
