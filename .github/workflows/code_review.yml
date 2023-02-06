@@ -36,41 +36,4 @@ jobs:
         run: |
           echo "Running OpenAI code..."
           const openai = require("openai");
-          console.log(openai);
-
-      - name: "Send code to OpenAI for review"
-        id: code-review
-        uses: actions/github-script@v3
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        with:
-          script: |
-            const openai = require("openai");
-            openai.prompt( 
-              {
-                model: "text-davinci-002",
-                prompt: "Please review the code in this pull request and provide feedback",
-                maxTokens: 100,
-                temperature: 0.5,
-                topP: 1
-              },
-              function(error, response) {
-                if (error) {
-                  throw new Error(error);
-                }
-                const review = response.choices[0].text;
-                const pull_request_number = context.payload.pull_request.number;
-                const pull_request_body = context.payload.pull_request.body;
-                const new_body = pull_request_body + "\n\n" + "Code Review: " + review;
-                octokit.pulls.update({
-                  owner: context.repo.owner,
-                  repo: context.repo.repo,
-                  pull_number: pull_request_number,
-                  body: new_body
-                }).then(() => {
-                  console.log("Code review successfully added to the pull request!");
-                }).catch((error) => {
-                  throw new Error(error);
-                });
-              }
-            );
+          console.log(`OpenAI version: ${openai.version}`);
